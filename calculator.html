@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script>
+            var n1,n2,r;
+            function add()
+            {
+                n1=document.myform.n1.value;
+                n2=document.myform.n2.value;
+                n1=parseFloat(n1);
+                n2=parseFloat(n2);
+                r=n1+n2;
+                document.myform.result.value=r;
+            }
+            function mul()
+            {
+                n1=document.myform.n1.value;
+                n2=document.myform.n2.value;
+                n1=parseFloat(n1);
+                n2=parseFloat(n2);
+                r=n1*n2;
+                document.myform.result.value=r;
+            }
+            function sub()
+            {
+                n1=document.myform.n1.value;
+                n2=document.myform.n2.value;
+                n1=parseFloat(n1);
+                n2=parseFloat(n2);
+                r=n1-n2;
+                document.myform.result.value=r;
+            }
+            function div()
+            {
+                n1=document.myform.n1.value;
+                n2=document.myform.n2.value;
+                n1=parseFloat(n1);
+                n2=parseFloat(n2);
+                r=n1/n2;
+                document.myform.result.value=r;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform">
+            <h1 align="center">Arithmetic operation</h1>
+            <hr color="red">
+            <center> <u> Enter a number in each text box</u><br><br>
+            Number1:<input type="text" name="n1" value=""><br><br>
+            Number2:<input type="text" name="n2" value=""><br><br>
+            <input type="button" value="add" onclick="add()">
+            <input type="button" value="sub" onclick="sub()">
+            <input type="button" value="mul" onclick="mul()">
+            <input type="button" value="div" onclick="div()"><br><br>
+            <font color="red">Result is:
+                <input type="text" name="result" value=""></font></center>
+        </form>
+    </body>
+</html>
